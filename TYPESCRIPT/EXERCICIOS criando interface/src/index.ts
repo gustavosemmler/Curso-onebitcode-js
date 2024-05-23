@@ -90,3 +90,21 @@ async function showUser(username: string) {
   
     alert(message)
   }
+
+  async function main() {
+    await fetchUser('isaacpontes')
+    await fetchUser('julianaconde')
+    await fetchUser('pcaldass')
+    await fetchUser('lucasqueirogaa')
+    await fetchUser('frans203')
+    await fetchUser('gustavosemmler')
+  
+    await showUser('isaacpontes')
+    await showUser('gustavosemmler')
+  
+    showAllUsers()
+    showReposTotal()
+    showTopFive()
+  }
+  
+  main()
